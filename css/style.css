@@ -11,10 +11,6 @@
     min-height: 200px;
 }
 
-.debug footer {
-    background-color: yellow;
-}
-
 .debug header {
     background-color: black;
 }
@@ -72,6 +68,12 @@ body {
     font-family: "Roboto", serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    align
+}
+
 /*----------------
     BUTTONS
 ------------------*/
@@ -100,10 +102,11 @@ header {
     width: 50px;
     flex-shrink: 0;
     font-size: 14px;
-    color: #fff;
+    color: #999;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 14px;
 }
 
 .header-main {
@@ -128,7 +131,6 @@ header {
     display: flex;
     padding-bottom: 10px;
     align-items: center;
-
 }
 
 .icons ul {
@@ -142,7 +144,6 @@ header {
 
 .playlist {
     display: none;
-    color: #999;
 }
 
 .playlist h4 {
@@ -154,7 +155,7 @@ header {
 
 .playlist span {
     padding-left: 10px;
-    font-size: 18px;
+    /* font-size: 18px; */
 }
 
 .playlist ul {
@@ -164,7 +165,7 @@ header {
 
 .playlist li {
     padding-top: 15px;
-    font-size: 16px;
+    /* font-size: 16px; */
     font-weight: bold;
 }
 
@@ -191,12 +192,11 @@ i {
 
 .header-bottom .flex-center {
     padding-bottom: 15px;
-    width: 100%;
+
 }
 
 .header-bottom img {
     width: 30px;
-
 }
 
 .header-bottom .icons div:last-child img {
@@ -205,6 +205,9 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.header-bottom .icons div:last-child span {
+    color: white;
 }
 
 .header-bottom .icons div:first-child {
@@ -232,7 +235,109 @@ main {
 ------------------*/
 footer {
     height: 100px;
+    background-color: #282828;
 }
+
+footer h4 {
+    color: white;
+    font-size: 14px;
+}
+
+.foot-cont  {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding: 20px 10px;
+    color: #848484;
+} 
+
+.foot-left  {
+    display: flex;
+    /* width: 20%; */
+    padding: 10px 0;
+}
+
+.favorite {
+    padding-left: 5%;
+    align-self: center;
+    font-size: 10px;
+}
+
+.favorite i {
+    color: #848484;
+    font-size: 16px;
+    padding-bottom: 5px;
+    margin-left: 10px;
+
+}
+
+.currently-playing {
+    display: flex;
+}
+
+.currently-playing .info-song {
+    padding-left: 10px;
+}
+
+.info-song {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-size: 12px;
+}
+
+.foot-center {
+    /* width: 60%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot-center i {
+    padding:  0 8px;
+    color: white;
+    font-size: 16px;
+}
+
+.play-bar {
+    display: flex;
+}
+
+.play-bar h4 {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.bar {
+    border: solid 1px white;
+    width: 100px;
+    height: 5px;
+    margin: 20px 10px;
+    align-self: center;
+}
+
+.foot-right {
+    align-self: center;
+    display: flex;
+}
+
+.foot-right .bar {
+    border: solid 1px white;
+    width: 50px;
+    height: 5px;
+    margin: 20px 10px;
+    align-self: center;
+
+}
+
+.foot-right i {
+    font-size: 16px;
+    color: white;
+    padding-right: 10px;
+    align-self: center;
+}
+
 /*----------------
     RESPONSIVE
     Mobile First
