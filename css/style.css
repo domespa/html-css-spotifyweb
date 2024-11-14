@@ -11,6 +11,14 @@
     min-height: 200px;
 }
 
+.debug footer {
+    background-color: yellow;
+}
+
+.debug header {
+    background-color: black;
+}
+
 /*----------------
     RESET
 ------------------*/
@@ -71,49 +79,205 @@ body {
     background-color: transparent;
     font-family: inherit;
     border: none;
-    padding: 6px 12px;
+    padding: 6px 8px;
     cursor: pointer;
 }
 
 .btn-large {
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 16px;
 }
 
 .btn-primary {
-    background-color: lightcoral;
-    color: #fff;
+    background-color: #999;
+    margin-left: 20px;
 }
 
 /*----------------
     HEADER
 ------------------*/
+header {
+    width: 50px;
+    flex-shrink: 0;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-main {
+    height: calc(100% - 100px);
+    display: flex;
+}
+
+.logo-small {
+    display: block;
+    padding: 5px 15px 0px 15px;
+}
+
+.logo-big {
+    display: none;
+}
+
+.icons {
+   width: 50px;
+}
+
+.icons li {
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+
+}
+
+.icons ul {
+    list-style: none;
+    padding: 5px 15px 0px 15px;
+}
+
+.icons span {
+    display: none;
+}
+
+.playlist {
+    display: none;
+    color: #999;
+}
+
+.playlist h4 {
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-top: 15px;
+    color: white;
+}
+
+.playlist span {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.playlist ul {
+    padding-left: 20px;
+    list-style: none;
+}
+
+.playlist li {
+    padding-top: 15px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+i {
+    font-size: 30px;
+    color: #000000;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom {
+    display: flex;
+    padding: 5px 15px 0px 15px;
+    justify-content: center;
+    width: 100%;
+}
+
+.header-bottom .icons {
+    width: 100%;
+}
+
+.header-bottom .flex-center {
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.header-bottom img {
+    width: 30px;
+
+}
+
+.header-bottom .icons div:last-child img {
+    background-color: #999;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-bottom .icons div:first-child {
+    border-bottom: solid 1px #999;
+    margin-bottom: 10px;
+    width: 100%;
+}
 
 /*----------------
     MAIN
 ------------------*/
+body {
+    height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+
 
 /*----------------
     FOOTER
 ------------------*/
-
+footer {
+    height: 100px;
+}
 /*----------------
     RESPONSIVE
     Mobile First
 ------------------*/
-/* SM >= 576px */
-@media screen and (min-width: 576px) {
+/* SM >= 550px */
+@media screen and (min-width: 550px) {
+    header {
+        width: 240px;
+    }
+    .logo-small {
+        display: none;
+        padding: 5px 10px;
+    }
+    .logo-big {
+        display: block;
+        padding: 20px 80px 10px 10px;
+    }
+    .icons {
+        width: 100;
+    }
+    .icons span {
+        display: inline;
+        padding-left: 5px;
+        white-space: nowrap;
+        font: 14px;
+    }
+    .playlist {
+        display: inline;
+    }
+
+    .header-bottom {
+        justify-content: start;
+
+    }
+     
+}
+/* MD >= 640px */
+@media screen and (min-width: 640px) {
     
 }
-/* MD >= 768px */
-@media screen and (min-width: 768px) {
+/* LG >= 880px */
+@media screen and (min-width: 880px) {
     
 }
-/* LG >= 992px */
-@media screen and (min-width: 992px) {
-    
-}
-/* XL >= 1200px */
-@media screen and (min-width: 1200px) {
+/* XL >= 1440px */
+@media screen and (min-width: 1440px) {
     
 }
