@@ -45,6 +45,7 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .col {
@@ -67,6 +68,11 @@
     flex-grow: 1;
 }
 
+a:hover {
+    color: white;
+}
+
+
 /*----------------
     TYPOGRAPHY
 ------------------*/
@@ -81,6 +87,9 @@ a {
     align-items: center;
 }
 
+p {
+    color: #7a7d81;
+}
 /*----------------
     BUTTONS
 ------------------*/
@@ -97,14 +106,19 @@ a {
     font-size: 14px;
     color: white;
     border: 1px solid white;
-    margin-right: 5px;
+    margin-right: 20px;
     margin-top: 12px;
     border-radius: 50px;
+    transition-duration: 0.4s;
 }
 
 .btn-primary {
     background-color: #999;
     margin-left: 20px;
+}
+
+.btn-large:hover {
+    transform: scale(1.1);
 }
 
 /*----------------
@@ -260,11 +274,15 @@ main {
     margin-top: 20px;
     font-weight: bold;
 }
-.Recently-played {
+.recently-played, 
+.create-for-you,
+.popular {
     margin: 10px;
 }
-.Recently-played h2 {
-    padding-bottom: 20px;
+.recently-played h2,
+.create-for-you h2,
+.popular h2 {
+    padding-bottom: 10px;
     color: white;
 }
 
@@ -278,14 +296,11 @@ main {
     width: calc(100% / 2);
     flex-wrap: wrap; 
     display: flex;
-    padding: 5px;
+    padding: 10px;
 }
 
 .col .album h3 {
     margin-top: 20px;
-}
-.col .album p {
-    color: #7a7d81;
 }
 
 .col .album img {
@@ -295,6 +310,41 @@ main {
 .album-details {
     text-align: center;
 }
+
+.popular .row .col .album img {
+    border-radius: 100%;
+}
+
+.album-cov {
+    position: relative;
+} 
+
+.album-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+
+.album-hover:hover {
+    opacity: 1;
+}
+
+.album-hover i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+    color: white;
+    font-size: 60px;
+}
+
+
+
 
 
 /*----------------
@@ -320,7 +370,7 @@ footer h4 {
 
 .foot-left  {
     display: flex;
-    /* width: 20%; */
+    width: 15%;
     padding: 10px 0;
 }
 
@@ -353,7 +403,7 @@ footer h4 {
 }
 
 .foot-center {
-    /* width: 60%; */
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,8 +438,9 @@ footer h4 {
 }
 
 .foot-right {
-    align-self: center;
     display: flex;
+    width: 15%;
+    justify-content: right;
 }
 
 .foot-right .bar {
