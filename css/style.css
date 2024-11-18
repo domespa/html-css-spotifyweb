@@ -354,12 +354,15 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     cursor: pointer;
-    border-radius: 100%;
-    
 }
 
 .album-hover:hover {
     opacity: 1;
+}
+
+.popular .row .col .album .album-cov {
+    border-radius: 100%;
+    overflow: hidden;
 }
 
 .album-hover i {
