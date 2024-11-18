@@ -354,6 +354,7 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
     cursor: pointer;
+    border-radius: 100%;
     
 }
 
@@ -370,10 +371,6 @@ main {
     color: white;
     font-size: 60px;
 }
-
-
-
-
 
 /*----------------
     FOOTER
@@ -442,7 +439,7 @@ footer h4 {
 }
 
 .foot-center i {
-    padding:  0 8px;
+    padding:  0 15px;
     color: white;
     font-size: 16px;
 }
